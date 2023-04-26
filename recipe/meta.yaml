@@ -24,9 +24,9 @@ requirements:
   build:
     - {{ posix }}zip               # [win]
   host:
-    - r-base
+    - r-base {{ r_version }} 
   run:
-    - r-base
+    - r-base {{ r_version }} 
 
 test:
   commands:
